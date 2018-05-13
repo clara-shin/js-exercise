@@ -357,7 +357,7 @@ function snakecase(str){
   
   for(let c of str){
     if(c.toUpperCase() === c){
-      newStr += '-' + c.toLowerCase();
+      newStr += '_' + c.toLowerCase();
     }else{
       newStr += c;
     }
