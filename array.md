@@ -229,6 +229,18 @@ sort([5,4,3,2,1]);
 
 
 //버블정렬도 짜보자
+function sort(arr){
+  for(let i=0; i < arr.length; i++){
+    for(let j=i+1; j < arr.length; j++){
+      if(arr[i] > arr[j]){
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+    }
+  }
+  return arr;
+}
+
+
 ```
 
 
